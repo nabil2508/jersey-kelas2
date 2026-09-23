@@ -461,7 +461,7 @@
           throw new Error("Gagal menyimpan ke Supabase");
         }
       } catch (err) {
-        showRetroModal("Gagal Menyimpan", "Terjadi kesalahan saat menghubungkan ke database.", "error");
+        showRetroModal("Gagal Menyimpan", "Terjadi kesalahan saat menghubungkan ke database, atau nomor jersey sudah digunakan", "error");
         btnSubmit.disabled = false;
         return;
       }
